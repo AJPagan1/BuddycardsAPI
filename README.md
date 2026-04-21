@@ -35,7 +35,7 @@ Install all:
 
 ## Data
 
-kubejs/data/"namespace"/buddyinfo/
+`kubejs/data/"namespace"/buddyinfo/`
 
 Folders:
 - sets/
@@ -48,7 +48,7 @@ Folders:
 
 ## Assets
 
-kubejs/assets/"namespace"/textures/
+`kubejs/assets/"namespace"/textures/`
 
 Folders:
 - item/<set>/
