@@ -51,8 +51,8 @@ Folders:
 `kubejs/assets/"namespace"/textures/`
 
 Folders:
-- item/<set>/
-- block/<set>/
+- item/"set name"/
+- block/"set name"/
 - gui/
 
 ---
