@@ -5,7 +5,7 @@
 ![Status](https://img.shields.io/badge/status-stable-success)
 ![Data Driven](https://img.shields.io/badge/system-data--driven-blue)
 
-BuddycardsJS is a **data-driven extension for Buddycards** that lets you create full Buddycards-style content using JSON and textures.
+BuddycardsJS is a **data-driven KubeJS addon for Buddycards** that lets you create full Buddycards-style content using JSON and textures.
 
 This README documents the full non-battle feature set, including:
 
