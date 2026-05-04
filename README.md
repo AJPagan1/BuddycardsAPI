@@ -1,24 +1,21 @@
 # BuddycardsJS
 
-![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-brightgreen)
-![Forge](https://img.shields.io/badge/Forge-47.4.10-orange)
-![Status](https://img.shields.io/badge/status-stable-success)
-![Data Driven](https://img.shields.io/badge/system-data--driven-blue)
-
 BuddycardsJS is a data-driven KubeJS addon for Buddycards that lets you create Buddycards-style content with JSON and textures.
 
-This README covers the current feature set, including:
+This README is written for **users of BuddycardsJS** and covers:
 
 - sets
 - cards
 - packs
 - binders
+- large binders
 - booster boxes
 - medals
 - loot injections
-- generated recipes, models, blockstates, tags, and language files
-- default texture naming rules
+- generated files
+- default texture naming
 - custom texture path overrides
+- Buddycards 4.3.0 compatibility notes that matter in-game
 
 ---
 
@@ -372,13 +369,6 @@ which points to:
 kubejs/assets/example/textures/item/example_set/custom_pack.png
 ```
 
-### Notes
-
-- Packs use Buddycards-style set tooltip behavior
-- Pack name color matches Buddycards
-- Packs stack like Buddycards
-- Packs can be used in booster box recipes and loot injections
-
 ---
 
 ## Binders
@@ -670,11 +660,6 @@ which points to:
 kubejs/assets/example/textures/item/example_set/custom_medal.png
 ```
 
-### Notes
-
-- Medals are added to the Curios medal tag automatically
-- BuddycardsJS removes the effect line while preserving the normal set line and advanced tooltip behavior
-
 ---
 
 ## Loot Injections
@@ -726,22 +711,6 @@ kubejs/data/<namespace>/buddyinfo/loot_injections/<file_name>.json
 BuddycardsJS supports an `empty` field in loot injections.
 
 This is the **empty weight** for the generated loot pool. It controls how often a roll gives nothing instead of your pack.
-
-Example:
-
-```json
-{
-  "targetLootTable": "simple_dungeon",
-  "pack": "example:buddycard_pack_example",
-  "weight": 1,
-  "rolls": 2,
-  "count": {
-    "min": 1,
-    "max": 2
-  },
-  "empty": 3
-}
-```
 
 ### What `empty` means
 
@@ -898,11 +867,7 @@ They may not stack if they differ by:
 
 ### Generated files
 
-Do not manually edit generated files unless you know exactly what you are doing. They can be regenerated and overwritten.
-
-### Fresh worlds after big registry changes
-
-If you rename namespaces, mod ids, or item ids, use a fresh test world.
+Generated files can be overwritten when BuddycardsJS regenerates assets and data.
 
 ---
 
@@ -946,14 +911,6 @@ kubejs/assets/<namespace>/textures/
 ---
 
 ## Troubleshooting
-
-### `.\gradlew.bat` is not recognized
-
-You are probably not in the project folder. Make sure you are in the folder that contains:
-
-- `build.gradle`
-- `settings.gradle`
-- `gradlew.bat`
 
 ### Items not showing up
 
